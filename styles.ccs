@@ -1,34 +1,83 @@
-.body-class {
-  background-color: #f5f5f5;
-}
 .header-class {
-  background-color: #333;
-  color: white;
+    color: black;
 }
-.nav-class {
-  background-color: #ddd;
-  color: #333;
+.origin-section-class{ 
+color: black;
 }
-.nav-class a.active {
-  font-weight: bold;
+.hero-section-class{ 
+color: black;
 }
-.title-class {
-  color: #007bff;
+.testimonial-section-class{ 
+color: black;
 }
-.section-title-class {
-  color: #28a745;
+.form-class{ 
+color: skyblue;
+}
+.faq-section-class{ 
+color: skyblue;
+}
+.newsletter-section-class{ 
+color: skyblue;
+}
+.input-class{ 
+color: skyblue; 
+background-color: black;
+}
+.button-class{ 
+color: white;
 }
 
-.text-class {
-  color: #333;
+.section-title-class{ 
+color: white;
 }
-
 .image-class {
-  border:2px solid #007bff;
+border: 10px solid skyblue;
+border-color: skyblue ; 
 }
+
+.body-class{
+    background-color:black;
+}
+
+ 
+.button-class{
+    color: black; 
+    background-color: skyblue
+}
+
 .footer-class {
-  background-color: #f8f9fa;
-  color: #6c757d;
+    background-color: skyblue;
+    color: black
 }
-@media screen and (max-width: 768px) {
+
+/* Navigation bar styles */
+.nav-class {
+    background-color: skyblue; 
+    font-weight: bold;
+
 }
+.nav-class::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background-color: black;
+    transition: 0.3s;
+    transition-timing-function: easy-in-out;
+    transform: scaleX(0)
+}
+.nav-class:hover::after
+{
+    transform: scaleX(1)}
+.title-class {
+    color: white;
+   background-color: skyblue;
+            text-align: left;
+            padding: 1em;
+            font-weight: bolder; 
+}
+.text-class { 
+    color:white;
+} 
